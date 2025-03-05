@@ -29,11 +29,11 @@ Please contact us!
 
 Thank you!
 
-* Afonso Miguel Almeida Pereira [up202305652@up.pt]
-* Ana Margarida da Costa Ribeiro [up202305264@up.pt]
-* Leandro Filipe Pais Resende [up202306343@up.pt]
-* Mateus Sousa Pereira Guerra [up202303440@up.pt]
-* Tomás Freire Noronha Jardim [up202306202@up.pt]
+* Afonso Miguel Almeida Pereira - up202305652@up.pt
+* Ana Margarida da Costa Ribeiro - up202305264@up.pt
+* Leandro Filipe Pais Resende - up202306343@up.pt
+* Mateus Sousa Pereira Guerra - up202303440@up.pt
+* Tomás Freire Noronha Jardim - up202306202@up.pt
 
 ---
 ## Business Modelling
