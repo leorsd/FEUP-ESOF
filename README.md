@@ -42,6 +42,7 @@ Business modeling in software development involves defining the product's vision
 
 ### Product Vision
 
+Making student commutes stress-free  with real-time parking insights at the University of Porto.
 <!-- 
 Start by defining a clear and concise vision for your app, to help members of the team, contributors, and users into focusing their often disparate views into a concise, visual, and short textual form. 
 
