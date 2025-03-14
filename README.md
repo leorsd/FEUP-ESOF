@@ -41,8 +41,6 @@ Thank you!
 Business modeling in software development involves defining the product's vision, understanding market needs, aligning features with user expectations, and setting the groundwork for strategic planning and execution.
 
 ### Product Vision
-
-Making student commutes stress-free  with real-time parking insights at the University of Porto.
 <!-- 
 Start by defining a clear and concise vision for your app, to help members of the team, contributors, and users into focusing their often disparate views into a concise, visual, and short textual form. 
 
@@ -74,6 +72,17 @@ Optionally, indicate an initial/tentative list of assumptions that you are doing
 -->
 
 ### Elevator Pitch
+
+🚗 **UPark – Smarter Parking for a Smarter Campus** 🏫  
+
+Finding parking on campus shouldn’t be a daily struggle. **UPark** is an intelligent parking management app designed for the **University of Porto** community, making campus parking hassle-free, efficient, and secure.  
+
+With **real-time parking availability**, instant vehicle notifications, and easy incident reporting, students can park faster and worry less. Security officers can monitor parking areas seamlessly and send alerts directly to vehicle owners, eliminating mass emails and improving response times.  
+
+No more guesswork, endless searching, or unnecessary stress—just smart, effortless parking at your fingertips.  
+
+🚀 **UPark – because parking should be the easiest part of your day!**  
+
 <!-- 
 Draft a small text to help you quickly introduce and describe your product in a short time (lift travel time ~90 seconds) and a few words (~800 characters), a technique usually known as elevator pitch.
 
