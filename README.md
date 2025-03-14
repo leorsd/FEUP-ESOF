@@ -75,9 +75,9 @@ Optionally, indicate an initial/tentative list of assumptions that you are doing
 
 🚗 **UPark – Smarter Parking for a Smarter Campus** 🏫  
 
-Finding parking on campus shouldn’t be a daily struggle. **UPark** is an intelligent parking management app designed for the University of Porto community, making campus parking hassle-free, efficient, and secure.  
+Finding parking on campus shouldn’t be a daily struggle. **UPark** is an intelligent parking management app designed for the **University of Porto** community, making campus parking hassle-free, efficient, and secure.  
 
-With real-time parking availability, instant vehicle notifications, and easy incident reporting, students can park faster and worry less. Security officers can monitor parking areas seamlessly and send alerts directly to vehicle owners, eliminating mass emails and improving response times.  
+With **real-time parking availability**, instant vehicle notifications, and easy incident reporting, students can park faster and worry less. Security officers can monitor parking areas seamlessly and send alerts directly to vehicle owners, eliminating mass emails and improving response times.  
 
 No more guesswork, endless searching, or unnecessary stress—just smart, effortless parking at your fingertips.  
 
