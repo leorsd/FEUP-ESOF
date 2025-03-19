@@ -132,15 +132,18 @@ The link to our GitHub Project that constains the Scrum Board can be found [here
 
 ### Domain model
 
-<!-- 
-To better understand the context of the software system, it is useful to have a simple UML class diagram with all and only the key concepts (names, attributes) and relationships involved of the problem domain addressed by your app. 
-Also provide a short textual description of each concept (domain class). 
+The UPark application serves two user types: University of Porto security officers and students. 
+Security officers can notify students about events related to their cars, while students can only receive this notifications. Both have access to information about the university's parking lots.
 
-Example:
- <p align="center" justify="center">
-  <img src="https://github.com/FEUP-LEIC-ES-2022-23/templates/blob/main/images/DomainModel.png"/>
+* **User** - Stores personal information about users.
+  * **Security Officer** - Inherits user information and includes a unique security ID.
+  * **Student** - Inherits user information and stores student details along with their car plate.
+* **Message** - Represents a notification sent by a security officer to a student.
+* **Parking Lot** - Maintains real-time information on its occupancy rate.
+
+<p align="center" justify="center">
+  <img src="Images/Class_diagram.png"/>
 </p>
--->
 
 
 ## Architecture and Design
