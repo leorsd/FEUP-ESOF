@@ -63,6 +63,19 @@ To learn more about how to write a good product vision, please see:
 
 
 ### Features and Assumptions
+
+1. Create an account linked to an email address and your car's license plate.
+
+2. Choose a parking lot to check its availability.
+
+3. View the availability of the selected parking lot as a percentage.
+
+4. A chat where you will receive messages from the parking lot security about any information regarding your car.
+
+5. Sort parking lots by availability.
+
+6. Add a specific parking lot to favorites.
+
 <!-- 
 Indicate an  initial/tentative list of high-level features - high-level capabilities or desired services of the system that are necessary to deliver benefits to the users.
  - Feature XPTO - a few words to briefly describe the feature
