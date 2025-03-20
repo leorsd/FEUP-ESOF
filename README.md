@@ -45,6 +45,22 @@ Making student commutes stress-free with real-time parking insights at the Unive
 
 
 ### Features and Assumptions
+
+**High-Level Features**
+- **User aunthentication:** Create an account linked to an email address and personal information.
+- **Parking lot selection:** Choose a parking lot to check its availability.
+- **Availability display:** View the availability of the selected parking lot as a percentage.
+- **Interactive Parking Lot Map:** View an interactive map displaying available parking lots, allowing users to easily locate and select a parking spot based on real-time data 
+- **Security notificatins via chat:** A chat where you will receive messages from the parking lot security about any information regarding your car.
+- **Sort by avaliability:** Sort parking lots by availability.
+- **Favorite parking lots:** Add a specific parking lot to favorites section.
+- **Security Alerts:** Parking security can send real-time messages to users regarding their vehicle, such as incidents, parking violations, or important updates.
+
+**Assumptions of dependencies**
+
+- Internet Connectivity.
+- The app relies on Firebase for backend services including database, authentication and notifications.
+- Google Maps API.
 <!-- 
 Indicate an  initial/tentative list of high-level features - high-level capabilities or desired services of the system that are necessary to deliver benefits to the users.
  - Feature XPTO - a few words to briefly describe the feature
