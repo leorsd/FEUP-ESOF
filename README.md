@@ -38,37 +38,27 @@ Thank you!
 ---
 ## Business Modelling
 
-Business modeling in software development involves defining the product's vision, understanding market needs, aligning features with user expectations, and setting the groundwork for strategic planning and execution.
-
 ### Product Vision
-Making student commutes stress-free with real-time parking insights at the University of Porto.
 
+**Making student commutes stress-free with real-time parking insights at the University of Porto.**
 
 ### Features and Assumptions
 
 **High-Level Features**
-- **User aunthentication:** Create an account linked to an email address and personal information.
-- **Parking lot selection:** Choose a parking lot to check its availability.
+- **User authentication:** Create an account linked to an email address and personal information.
+- **Parking lot selection:** Choose a parking lot from a list of all the university's parking lots.
 - **Availability display:** View the availability of the selected parking lot as a percentage.
 - **Interactive Parking Lot Map:** View an interactive map displaying available parking lots, allowing users to easily locate and select a parking spot based on real-time data 
 - **Security notificatins via chat:** A chat where you will receive messages from the parking lot security about any information regarding your car.
 - **Sort by avaliability:** Sort parking lots by availability.
-- **Favorite parking lots:** Add a specific parking lot to favorites section.
+- **Favorite parking lots:** Add a specific parking lot to a favorites section.
 - **Security Alerts:** Parking security can send real-time messages to users regarding their vehicle, such as incidents, parking violations, or important updates.
 
 **Assumptions of dependencies**
 
 - Internet Connectivity.
-- The app relies on Firebase for backend services including database, authentication and notifications.
+- Firebase for database management and user authentication.
 - Google Maps API.
-<!-- 
-Indicate an  initial/tentative list of high-level features - high-level capabilities or desired services of the system that are necessary to deliver benefits to the users.
- - Feature XPTO - a few words to briefly describe the feature
- - Feature ABCD - ...
-...
-
-Optionally, indicate an initial/tentative list of assumptions that you are doing about the app and dependencies of the app to other systems.
--->
 
 ### Elevator Pitch
 
@@ -86,33 +76,6 @@ No more guesswork, endless searching, or unnecessary stress—just smart, effort
 ## Requirements
 
 ### User Stories
-<!-- 
-In this section, you should describe all kinds of requirements for your module: functional and non-functional requirements.
-
-For LEIC-ES-2024-25, the requirements will be gathered and documented as user stories. 
-
-Please add in this section a concise summary of all the user stories.
-
-**User stories as GitHub Project Items**
-The user stories themselves should be created and described as items in your GitHub Project with the label "user story". 
-
-A user story is a description of a desired functionality told from the perspective of the user or customer. A starting template for the description of a user story is *As a < user role >, I want < goal > so that < reason >.*
-
-Name the item with either the full user story or a shorter name. In the “comments” field, add relevant notes, mockup images, and acceptance test scenarios, linking to the acceptance test in Gherkin when available, and finally estimate value and effort.
-
-**INVEST in good user stories**. 
-You may add more details after, but the shorter and complete, the better. In order to decide if the user story is good, please follow the [INVEST guidelines](https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/).
-
-**User interface mockups**.
-After the user story text, you should add a draft of the corresponding user interfaces, a simple mockup or draft, if applicable.
-
-**Acceptance tests**.
-For each user story you should write also the acceptance tests (textually in [Gherkin](https://cucumber.io/docs/gherkin/reference/)), i.e., a description of scenarios (situations) that will help to confirm that the system satisfies the requirements addressed by the user story.
-
-**Value and effort**.
-At the end, it is good to add a rough indication of the value of the user story to the customers (e.g. [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method) method) and the team should add an estimation of the effort to implement it, for example, using points in a kind-of-a Fibonnacci scale (1,2,3,5,8,13,20,40, no idea).
-
--->
 
 In this project, the requirements were documented as *User Stories*, to prioritize user's needs and goals rather than focusing on technical details. This approach allows the requirements to be shorter, easier to understand and easily adaptable to changes.
 
@@ -123,16 +86,17 @@ The link to our GitHub Project that constains the Scrum Board can be found [here
 ### Domain model
 
 The UPark application serves two user types: University of Porto security officers and students. 
-Security officers can notify students about events related to their cars, while students can only receive this notifications. Both have access to information about the university's parking lots.
+Security officers can notify students about events related to their cars, while students can only receive these notifications. Both have access to information about the university's parking lots and a city map of Porto, which displays their locations.
 
 * **User** - Stores personal information about users.
   * **Security Officer** - Inherits user information and includes a unique security ID.
   * **Student** - Inherits user information and stores student details along with their car plate.
 * **Message** - Represents a notification sent by a security officer to a student.
 * **Parking Lot** - Maintains real-time information on its occupancy rate.
+* **Map** - Displays the locations of the parking lots.
 
 <p align="center" justify="center">
-  <img src="Images/Class_diagram.png"/>
+  <img src="Images/domain_model.png"/>
 </p>
 
 
