@@ -42,24 +42,6 @@ Business modeling in software development involves defining the product's vision
 
 ### Product Vision
 Making student commutes stress-free with real-time parking insights at the University of Porto.
-<!-- 
-Start by defining a clear and concise vision for your app, to help members of the team, contributors, and users into focusing their often disparate views into a concise, visual, and short textual form. 
-
-The vision should provide a "high concept" of the product for marketers, developers, and managers.
-
-A product vision describes the essential of the product and sets the direction to where a product is headed, and what the product will deliver in the future. 
-
-**We favor a catchy and concise statement, ideally one sentence.**
-
-We suggest you use the product vision template described in the following link:
-* [How To Create A Convincing Product Vision To Guide Your Team, by uxstudioteam.com](https://uxstudioteam.com/ux-blog/product-vision/)
-
-To learn more about how to write a good product vision, please see:
-* [Vision, by scrumbook.org](http://scrumbook.org/value-stream/vision.html)
-* [Product Management: Product Vision, by ProductPlan](https://www.productplan.com/glossary/product-vision/)
-* [How to write a vision, by dummies.com](https://www.dummies.com/business/marketing/branding/how-to-write-vision-and-mission-statements-for-your-brand/)
-* [20 Inspiring Vision Statement Examples (2019 Updated), by lifehack.org](https://www.lifehack.org/articles/work/20-sample-vision-statement-for-the-new-startup.html)
--->
 
 
 ### Features and Assumptions
@@ -84,14 +66,6 @@ No more guesswork, endless searching, or unnecessary stress—just smart, effort
 
 🚀 **UPark – because parking should be the easiest part of your day!**  
 
-<!-- 
-Draft a small text to help you quickly introduce and describe your product in a short time (lift travel time ~90 seconds) and a few words (~800 characters), a technique usually known as elevator pitch.
-
-Take a look at the following links to learn some techniques:
-* [Crafting an Elevator Pitch](https://www.mindtools.com/pages/article/elevator-pitch.htm)
-* [The Best Elevator Pitch Examples, Templates, and Tactics - A Guide to Writing an Unforgettable Elevator Speech, by strategypeak.com](https://strategypeak.com/elevator-pitch-examples/)
-* [Top 7 Killer Elevator Pitch Examples, by toggl.com](https://blog.toggl.com/elevator-pitch-examples/)
--->
 
 ## Requirements
 
