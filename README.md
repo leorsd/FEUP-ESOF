@@ -112,6 +112,7 @@ In this section you should start by briefly describing the components of the pro
 -->
 
 
+
 ### Logical architecture
 <!--
 The purpose of this subsection is to document the high-level logical structure of the code (Logical View), using a UML diagram with logical packages, without the worry of allocating to components, processes or machines.
@@ -122,6 +123,14 @@ Example of _UML package diagram_ showing a _logical view_ of the Eletronic Ticke
 
 ![LogicalView](https://user-images.githubusercontent.com/9655877/160585416-b1278ad7-18d7-463c-b8c6-afa4f7ac7639.png)
 -->
+
+The user interface shows the visual elements and handles the user's interactions; the Business Logic processes those interactions and handlesthe app's functionalities while also integrating the Google Maps API, Data Movements are handled by FireBase Database
+
+<p align="center" justify="center">
+  <img src="Images/Logical_Architecture.png"/>
+</p>
+
+
 
 
 ### Physical architecture
