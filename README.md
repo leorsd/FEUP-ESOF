@@ -135,7 +135,7 @@ The user interface shows the visual elements and handles the user's interactions
 
 ### Physical architecture
 
-The physical architecture represents the deployment of the system, including its components and how they interact in a real-world environment.
+The Physical Architecture of UPark outlines how the system’s software components are deployed across different physical nodes, including mobile devices, cloud services, and external APIs. The architecture ensures seamless real-time parking availability updates, secure user authentication, and efficient communication between students and security officers.
 
 <p align="center" justify="center">
   <img src="Images/Physical_Architecture.png"/>
