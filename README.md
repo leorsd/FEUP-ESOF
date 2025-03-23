@@ -49,7 +49,7 @@ Thank you!
 - **Parking lot selection:** Choose a parking lot from a list of all the university's parking lots.
 - **Availability display:** View the availability of the selected parking lot as a percentage.
 - **Interactive Parking Lot Map:** View an interactive map displaying available parking lots, allowing users to easily locate and select a parking spot based on real-time data 
-- **Security notificatins via chat:** A chat where you will receive messages from the parking lot security about any information regarding your car.
+- **Security notifications via chat:** A chat where you will receive messages from the parking lot security about any information regarding your car.
 - **Sort by avaliability:** Sort parking lots by availability.
 - **Favorite parking lots:** Add a specific parking lot to a favorites section.
 - **Security Alerts:** Parking security can send real-time messages to users regarding their vehicle, such as incidents, parking violations, or important updates.
@@ -134,9 +134,15 @@ The user interface shows the visual elements and handles the user's interactions
 
 
 ### Physical architecture
+
+The physical architecture represents the deployment of the system, including its components and how they interact in a real-world environment.
+
+<p align="center" justify="center">
+  <img src="Images/Physical_Architecture.png"/>
+</p>
+
 <!--
 The goal of this subsection is to document the high-level physical structure of the software system (machines, connections, software components installed, and their dependencies) using UML deployment diagrams (Deployment View) or component diagrams (Implementation View), separate or integrated, showing the physical structure of the system.
-
 It should describe also the technologies considered and justify the selections made. Examples of technologies relevant for ESOF are, for example, frameworks for mobile applications (such as Flutter).
 
 Example of _UML deployment diagram_ showing a _deployment view_ of the Eletronic Ticketing System (please notice that, instead of software components, one should represent their physical/executable manifestations for deployment, called artifacts in UML; the diagram should be accompanied by a short description of each node and artifact):
