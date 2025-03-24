@@ -135,13 +135,11 @@ The user interface shows the visual elements and handles the user's interactions
 
 ### Physical architecture
 
-The Physical Architecture of UPark outlines how the system’s software components are deployed across different physical nodes, including mobile devices, cloud services, and external APIs. The architecture ensures seamless real-time parking availability updates, secure user authentication, and efficient communication between students and security officers.
+The Physical Architecture of UPark outlines how the system’s software components are deployed across different physical nodes, including mobile devices, cloud services, and external APIs. 
 
-#### Students’ Smartphones  
-**UPark Application (Flutter):** A mobile application that allows students to access UPark services, including selecting parking lots, viewing availability, and receiving security alerts.
+**Students’ Smartphones - UPark Application (Flutter):** A mobile application that allows students to access UPark services, including selecting parking lots, viewing availability, and receiving security alerts.
 
-#### Security Officers’ Smartphones  
-**UPark Application (Flutter):** A separate interface within the same UPark mobile application, enabling security officers to send messages and alerts to students about parking-related issues.
+**Security Officers’ Smartphones - UPark Application (Flutter):** A separate interface within the same UPark mobile application, enabling security officers to send messages and alerts to students about parking-related issues.
 
 #### UPark Application Server  
 - **UPark UI:** The main user interface for managing interactions between students, security officers, and the parking system.  
