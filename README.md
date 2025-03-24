@@ -49,7 +49,7 @@ Thank you!
 - **Parking lot selection:** Choose a parking lot from a list of all the university's parking lots.
 - **Availability display:** View the availability of the selected parking lot as a percentage.
 - **Interactive Parking Lot Map:** View an interactive map displaying available parking lots, allowing users to easily locate and select a parking spot based on real-time data 
-- **Security notificatins via chat:** A chat where you will receive messages from the parking lot security about any information regarding your car.
+- **Security notifications via chat:** A chat where you will receive messages from the parking lot security about any information regarding your car.
 - **Sort by avaliability:** Sort parking lots by availability.
 - **Favorite parking lots:** Add a specific parking lot to a favorites section.
 - **Security Alerts:** Parking security can send real-time messages to users regarding their vehicle, such as incidents, parking violations, or important updates.
@@ -134,9 +134,31 @@ The user interface shows the visual elements and handles the user's interactions
 
 
 ### Physical architecture
+
+The Physical Architecture of UPark outlines how the system’s software components are deployed across different physical nodes, including mobile devices, cloud services, and external APIs. 
+
+**Students’ Smartphones - UPark Application (Flutter):** A mobile application that allows students to access UPark services, including selecting parking lots, viewing availability, and receiving security alerts.
+
+**Security Officers’ Smartphones - UPark Application (Flutter):** A separate interface within the same UPark mobile application, enabling security officers to send messages and alerts to students about parking-related issues.
+
+#### UPark Application Server  
+- **UPark UI:** The main user interface for managing interactions between students, security officers, and the parking system.  
+- **Account Services:** Handles user authentication and account management, ensuring secure access.  
+- **Availability and Parking Logic Services (Dart):** Manages real-time parking availability updates and selection logic.  
+- **Security Chat Service (Dart):** Facilitates real-time communication between security officers and students regarding parking-related notifications.  
+
+#### Google Cloud Services  
+- **Google Maps API:** Provides map-based parking lot selection and navigation.  
+- **Firebase Authentication API:** Ensures secure login and user authentication.  
+- **Firestore API:** Manages real-time data storage, including user accounts, chat messages, and parking lot availability.  
+
+
+<p align="center" justify="center">
+  <img src="Images/Physical_Architecture.png"/>
+</p>
+
 <!--
 The goal of this subsection is to document the high-level physical structure of the software system (machines, connections, software components installed, and their dependencies) using UML deployment diagrams (Deployment View) or component diagrams (Implementation View), separate or integrated, showing the physical structure of the system.
-
 It should describe also the technologies considered and justify the selections made. Examples of technologies relevant for ESOF are, for example, frameworks for mobile applications (such as Flutter).
 
 Example of _UML deployment diagram_ showing a _deployment view_ of the Eletronic Ticketing System (please notice that, instead of software components, one should represent their physical/executable manifestations for deployment, called artifacts in UML; the diagram should be accompanied by a short description of each node and artifact):
