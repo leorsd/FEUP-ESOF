@@ -137,6 +137,30 @@ The user interface shows the visual elements and handles the user's interactions
 
 The Physical Architecture of UPark outlines how the system’s software components are deployed across different physical nodes, including mobile devices, cloud services, and external APIs. The architecture ensures seamless real-time parking availability updates, secure user authentication, and efficient communication between students and security officers.
 
+
+## Students’ Smartphones
+**UPark Application (Flutter):** A mobile application that allows students to access UPark services, including selecting parking lots, viewing availability, and receiving security alerts.
+
+## Security Officers’ Smartphones
+**UPark Application (Flutter):** A separate interface within the same UPark mobile application, enabling security officers to send messages and alerts to students about parking-related issues.
+
+## UPark Application Server
+**UPark UI:** The main user interface for managing interactions between students, security officers, and the parking system.  
+
+**Account Services:** Handles user authentication and account management, ensuring secure access.  
+
+**Availability and Parking Logic Services (Dart):** Manages real-time parking availability updates and selection logic.  
+
+**Security Chat Service (Dart):** Facilitates real-time communication between security officers and students regarding parking-related notifications.  
+
+## Google Cloud Services
+**Google Maps API:** Provides map-based parking lot selection and navigation.  
+
+**Firebase Authentication API:** Ensures secure login and user authentication.  
+
+**Firestore API:** Manages real-time data storage, including user accounts, chat messages, and parking lot availability.  
+
+
 <p align="center" justify="center">
   <img src="Images/Physical_Architecture.png"/>
 </p>
