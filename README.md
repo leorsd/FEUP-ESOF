@@ -124,7 +124,19 @@ Example of _UML package diagram_ showing a _logical view_ of the Eletronic Ticke
 ![LogicalView](https://user-images.githubusercontent.com/9655877/160585416-b1278ad7-18d7-463c-b8c6-afa4f7ac7639.png)
 -->
 
-The user interface shows the visual elements and handles the user's interactions; the Business Logic processes those interactions and handlesthe app's functionalities while also integrating the Google Maps API, Data Movements are handled by FireBase Database
+The UPark App is divided into several packages:
+
+* **UPark Interface** - Handles user interactions, UI components, navigation, and state management for a seamless experience.
+
+* **Business Logic** - Contains the core functionalities of the app such as, parking availability and reservations, and manages Google Maps integration.
+
+* **UPark Database Schema** - Defines the structure and organization of the app's database, storing user profiles, parking details, and transaction history.
+
+* **GoogleMapsAPI** - Integrates Google Maps for geolocation, route optimization, real-time traffic updates, and map visualization.
+
+* **Firestore** - Handles live parking updates, cloud storage, user authentication, and data synchronization across devices.
+
+
 
 <p align="center" justify="center">
   <img src="Images/Logical_Architecture.png"/>
