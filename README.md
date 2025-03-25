@@ -96,7 +96,7 @@ Security officers can notify students about events related to their cars, while 
 * **Map** - Displays the locations of the parking lots.
 
 <p align="center" justify="center">
-  <img src="Images/domain_model.png"/>
+  <img src="images/umlDiagrams/domain_model.png"/>
 </p>
 
 
@@ -139,7 +139,7 @@ The UPark App is divided into several packages:
 
 
 <p align="center" justify="center">
-  <img src="Images/Logical_Architecture.png"/>
+  <img src="images/umlDiagrams/Logical_Architecture.png"/>
 </p>
 
 
@@ -166,7 +166,7 @@ The Physical Architecture of UPark outlines how the system’s software componen
 
 
 <p align="center" justify="center">
-  <img src="Images/Physical_Architecture.png"/>
+  <img src="images/umlDiagrams/Physical_Architecture.png"/>
 </p>
 
 <!--
@@ -180,13 +180,23 @@ Example of _UML deployment diagram_ showing a _deployment view_ of the Eletronic
 
 
 ### Vertical prototype
-<!--
-To help on validating all the architectural, design and technological decisions made, we usually implement a vertical prototype, a thin vertical slice of the system integrating as much technologies we can.
 
-In this subsection please describe which feature, or part of it, you have implemented, and how, together with a snapshot of the user interface, if applicable.
+During Sprint 0, we successfully implemented the initial features we envisioned for our app, including fully functional **register** and **login** pages using Firebase Authentication and Firestore. We also developed a bottom navigation bar, enabling navigation between different pages.
+Additionally, we integrated the Google Maps API, ensuring its compatibility for various use cases in upcoming sprints.
 
-At this phase, instead of a complete user story, you can simply implement a small part of a feature that demonstrates thay you can use the technology, for example, show a screen with the app credits (name and authors).
--->
+Even though the Messages, Profile, Favorites, and Home pages are already visible in the bottom navigation bar, these pages are currently empty and do not yet include any functionality.
+
+Here are some screenshots of our first prototype:
+
+<table align="center">
+  <tr>
+    <td><img src="images/verticalPrototype/register_screenshot.png" width="300"></td>
+    <td width="20"></td> <!-- Spacer -->
+    <td><img src="images/verticalPrototype/login_screenshot.png" width="300"></td>
+    <td width="20"></td> <!-- Spacer -->
+    <td><img src="images/verticalPrototype/maps_screenshot.png" width="300"></td>
+  </tr>
+</table>
 
 ## Project management
 <!--
