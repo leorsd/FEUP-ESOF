@@ -188,15 +188,17 @@ Even though the Messages, Profile, Favorites, and Home pages are already visible
 
 Here are some screenshots of our first prototype:
 
-<table align="center" border="0">
-  <tr>
-    <td><img src="images/verticalPrototype/register_screenshot.png" width="300"></td>
-    <td width="20"></td> 
-    <td><img src="images/verticalPrototype/login_screenshot.png" width="300"></td>
-    <td width="20"></td>
-    <td><img src="images/verticalPrototype/maps_screenshot.png" width="300"></td>
-  </tr>
-</table>
+<div style="border: none;">
+  <table align="center" border="0">
+    <tr>
+      <td style="border: none;"><img src="images/verticalPrototype/register_screenshot.png" width="300"></td>
+      <td width="20" style="border: none;"></td> 
+      <td style="border: none;"><img src="images/verticalPrototype/login_screenshot.png" width="300"></td>
+      <td width="20"></td>
+      <td style="border: none;"><img src="images/verticalPrototype/maps_screenshot.png" width="300"></td>
+    </tr>
+  </table>
+</div>
 
 ## Project management
 <!--
