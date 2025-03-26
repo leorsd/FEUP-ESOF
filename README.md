@@ -188,12 +188,12 @@ Even though the Messages, Profile, Favorites, and Home pages are already visible
 
 Here are some screenshots of our first prototype:
 
-<table align="center">
+<table align="center" border="0">
   <tr>
     <td><img src="images/verticalPrototype/register_screenshot.png" width="300"></td>
-    <td width="20"></td> <!-- Spacer -->
+    <td width="20"></td> 
     <td><img src="images/verticalPrototype/login_screenshot.png" width="300"></td>
-    <td width="20"></td> <!-- Spacer -->
+    <td width="20"></td>
     <td><img src="images/verticalPrototype/maps_screenshot.png" width="300"></td>
   </tr>
 </table>
