@@ -20,7 +20,6 @@ This Software Development Report, tailored for LEIC-ES-2024-25, provides compreh
   * [Sprint 1](#Sprint-1)
   * [Sprint 2](#Sprint-2)
   * [Sprint 3](#Sprint-3)
-  * [Sprint 4](#Sprint-4)
   * [Final Release](#Final-Release)
 
 Contributions are expected to be made exclusively by the initial team, but we may open them to the community, after the course, in all areas and topics: requirements, technologies, development, experimentation, testing, etc.
@@ -214,14 +213,35 @@ You can find below information and references related with the project managemen
 
 -->
 
+* Backlog management: Product backlog and Sprint backlog are available at [Github Projects board](https://github.com/orgs/FEUP-LEIC-ES-2024-25/projects/47);
+* Release management: [v0](https://github.com/orgs/FEUP-LEIC-ES-2024-25/releases/tag/v0)
+
 ### Sprint 0
+
+#### Retrospective
+
+* **Did well**:
+  * **Effective Communication**: We kept an open and effective communication flow, making collaboration smooth and keeping everyone connected.
+  * **Adaptability**: The team efficiently ajusted to the new worflow and tools. 
+  * **Design and Development Kickoff**: We successfully created initial mockups and began building the app in a fast-paced develoment process, enabling us to quicky move from ideation to execution.
+* **Do differently**:
+  * **Define clearer Sprint Goals**: Establish more specific objectives for the next sprint to measure progress more effectively.
+* **Puzzles**:
+  * **Task Distribution**: We're figuring out the best way to divide the upcoming tasks so that everyone has a fair and manageable workload.
+  * **Implementing the Chat System**: We still have some doubts about the best approach to integrating the chat functionality.
+
+#### Project Board
+<div align="center">
+  <h3> End of Sprint 0 </h3>
+  <p><i>Progress overview at the end of the sprint</i></p>
+  <img src="images/sprints/sprint0_end.png">
+  <img src="images/sprints/sprint0_end2.png">
+</div>
 
 ### Sprint 1
 
 ### Sprint 2
 
 ### Sprint 3
-
-### Sprint 4
 
 ### Final Release
