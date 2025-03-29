@@ -214,7 +214,7 @@ You can find below information and references related with the project managemen
 -->
 
 * Backlog management: Product backlog and Sprint backlog are available at [Github Projects board](https://github.com/orgs/LEIC-ES-2024-25/projects/47);
-* Release management: [v0](https://github.com/orgs/LEIC-ES-2024-25/releases/tag/v0)
+* Release management: [v0](https://github.com/LEIC-ES-2024-25/2LEIC04T3/releases/tag/v0)
 
 ### Sprint 0
 
