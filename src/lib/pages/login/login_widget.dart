@@ -62,11 +62,12 @@ class _LoginWidgetState extends State<LoginWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 45.0),
                   child: Text(
                     'UPark',
-                    style: FlutterFlowTheme.of(context).displaySmall.override(
-                          fontFamily: 'Inter Tight',
-                          color: Colors.white,
+                    style: FlutterFlowTheme.of(context).headlineMedium.override(
+                          fontFamily: 'Work Sans',
+                          color: FlutterFlowTheme.of(context).secondary,
                           fontSize: 40.0,
                           letterSpacing: 1.0,
+                          fontWeight: FontWeight.bold,
                         ),
                   ),
                 ),
@@ -90,8 +91,10 @@ class _LoginWidgetState extends State<LoginWidget> {
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
-                                fontFamily: 'Inter Tight',
+                                fontFamily: 'Work Sans',
+                                fontSize: 34.0,
                                 letterSpacing: 0.0,
+                                fontWeight: FontWeight.bold,
                               ),
                         ),
                       ),
@@ -295,7 +298,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .displaySmall
                                       .override(
-                                        fontFamily: 'Inter Tight',
+                                        fontFamily: 'Work Sans',
                                         color: Color(0xFFA84B74),
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
@@ -340,7 +343,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: 'Inter Tight',
+                                    fontFamily: 'Work Sans',
                                     color: Colors.white,
                                     letterSpacing: 0.0,
                                   ),
