@@ -100,28 +100,8 @@ Security officers can notify students about events related to their cars, while 
 
 
 ## Architecture and Design
-<!--
-The architecture of a software system encompasses the set of key decisions about its organization. 
-
-A well written architecture document is brief and reduces the amount of time it takes new programmers to a project to understand the code to feel able to make modifications and enhancements.
-
-To document the architecture requires describing the decomposition of the system in their parts (high-level components) and the key behaviors and collaborations between them. 
-
-In this section you should start by briefly describing the components of the project and their interrelations. You should describe how you solved typical problems you may have encountered, pointing to well-known architectural and design patterns, if applicable.
--->
-
-
 
 ### Logical architecture
-<!--
-The purpose of this subsection is to document the high-level logical structure of the code (Logical View), using a UML diagram with logical packages, without the worry of allocating to components, processes or machines.
-
-It can be beneficial to present the system in a horizontal decomposition, defining layers and implementation concepts, such as the user interface, business logic and concepts.
-
-Example of _UML package diagram_ showing a _logical view_ of the Eletronic Ticketing System (to be accompanied by a short description of each package):
-
-![LogicalView](https://user-images.githubusercontent.com/9655877/160585416-b1278ad7-18d7-463c-b8c6-afa4f7ac7639.png)
--->
 
 The UPark system is structured into the following components:
 
@@ -138,9 +118,6 @@ The UPark system is structured into the following components:
 <p align="center" justify="center">
   <img src="images/umlDiagrams/Logical_Architecture.png"/>
 </p>
-
-
-
 
 ### Physical architecture
 
@@ -166,15 +143,6 @@ The Physical Architecture of UPark outlines how the system’s software componen
   <img src="images/umlDiagrams/Physical_Architecture.png"/>
 </p>
 
-<!--
-The goal of this subsection is to document the high-level physical structure of the software system (machines, connections, software components installed, and their dependencies) using UML deployment diagrams (Deployment View) or component diagrams (Implementation View), separate or integrated, showing the physical structure of the system.
-It should describe also the technologies considered and justify the selections made. Examples of technologies relevant for ESOF are, for example, frameworks for mobile applications (such as Flutter).
-
-Example of _UML deployment diagram_ showing a _deployment view_ of the Eletronic Ticketing System (please notice that, instead of software components, one should represent their physical/executable manifestations for deployment, called artifacts in UML; the diagram should be accompanied by a short description of each node and artifact):
-
-![DeploymentView](https://user-images.githubusercontent.com/9655877/160592491-20e85af9-0758-4e1e-a704-0db1be3ee65d.png)
--->
-
 
 ### Vertical prototype
 
@@ -192,29 +160,13 @@ Here are some screenshots of our first prototype:
 </p>
 
 ## Project management
-<!--
-Software project management is the art and science of planning and leading software projects, in which software projects are planned, implemented, monitored and controlled.
-
-In the context of ESOF, we recommend each team to adopt a set of project management practices and tools capable of registering tasks, assigning tasks to team members, adding estimations to tasks, monitor tasks progress, and therefore being able to track their projects.
-
-Common practices of managing agile software development with Scrum are: backlog management, release management, estimation, Sprint planning, Sprint development, acceptance tests, and Sprint retrospectives.
-
-You can find below information and references related with the project management: 
-
-* Backlog management: Product backlog and Sprint backlog in a [Github Projects board](https://github.com/orgs/FEUP-LEIC-ES-2023-24/projects/64);
-* Release management: [v0](#), v1, v2, v3, ...;
-* Sprint planning and retrospectives: 
-  * plans: screenshots of Github Projects board at begin and end of each Sprint;
-  * retrospectives: meeting notes in a document in the repository, addressing the following questions:
-    * Did well: things we did well and should continue;
-    * Do differently: things we should do differently and how;
-    * Puzzles: things we don’t know yet if they are right or wrong… 
-    * list of a few improvements to implement next Sprint;
-
--->
 
 * Backlog management: Product backlog and Sprint backlog are available at [Github Projects board](https://github.com/orgs/LEIC-ES-2024-25/projects/47);
 * Release management: [v0](https://github.com/LEIC-ES-2024-25/2LEIC04T3/releases/tag/v0)
+* Definitions:
+  * In progress: Currently under development
+  * Done: Development is complete, and the feature or change has been tested
+  * Accepted: The client has reviewed and approved the delivered work
 
 ### Sprint 0
 
@@ -239,6 +191,28 @@ You can find below information and references related with the project managemen
 </div>
 
 ### Sprint 1
+
+#### Retrospective
+
+* **Did well**:
+  * **Focused Delivery of Core Features**: We successfully developed features that cover key aspects of the app's functionality-car registration, messaging from security to students and vehicle-related notifications. These features are central to the app's purpose and show clear alignment with user needs.
+  * **Accurate Estimation and Task Completion**: We estimated our workload realistically during Sprint Planning and managed to complete everything we committed to.
+* **Do differently**:
+  * **Improved Task Separation**: We need to break tasks down into smaller, more independent units so that each task can be worked on without waiting for the completion of others.
+* **Puzzles**:
+  * **Concerns about Integrating Google Maps Navigation**: We have uncertainties about whether it’s possible to integrate the Google Maps navigation system into our app. Additionally, we need to assess if this integration is feasible within the scope of the current sprint.
+
+#### Project Board
+<div align="center">
+  <h3> Start of Sprint 1 </h3>
+  <p><i>Progress overview at the start of the sprint</i></p>
+  <img src="images/sprints/sprint1_start.png">
+</div>
+<div align="center">
+  <h3> End of Sprint 1 </h3>
+  <p><i>Progress overview at the end of the sprint</i></p>
+  <img src="images/sprints/sprint1_end.png">
+</div>
 
 ### Sprint 2
 
