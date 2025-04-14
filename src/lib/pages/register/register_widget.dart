@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -70,12 +71,12 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 45.0),
                   child: Text(
                     'UPark',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Inter',
-                          color: Colors.white,
+                    style: FlutterFlowTheme.of(context).headlineMedium.override(
+                          fontFamily: 'Work Sans',
+                          color: FlutterFlowTheme.of(context).secondary,
                           fontSize: 40.0,
                           letterSpacing: 0.0,
-                          fontWeight: FontWeight.w600,
+                          fontWeight: FontWeight.bold,
                         ),
                   ),
                 ),
@@ -100,7 +101,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Inter',
+                                    fontFamily: 'Work Sans',
                                     fontSize: 36.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -169,7 +170,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Inter',
+                                  fontFamily: 'PT Serif Caption',
                                   color: Color(0xFF939393),
                                   letterSpacing: 0.0,
                                 ),
@@ -242,7 +243,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Inter',
+                                  fontFamily: 'PT Serif Caption',
                                   color: Color(0xFF939393),
                                   letterSpacing: 0.0,
                                 ),
@@ -323,7 +324,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Inter',
+                                    fontFamily: 'PT Serif Caption',
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -406,7 +407,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Inter',
+                                  fontFamily: 'PT Serif Caption',
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
@@ -429,7 +430,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Inter',
+                                  fontFamily: 'PT Serif Caption',
                                   color: Color(0xFF939393),
                                   fontSize: 15.0,
                                   letterSpacing: 0.0,
@@ -483,6 +484,23 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                               return;
                             }
 
+                            await UsersRecord.collection.doc(user.uid).update({
+                              ...createUsersRecordData(
+                                email: _model.emailTextController.text,
+                                isSecurity: _model.isSecurityValue,
+                                displayName: _model.usernameTextController.text,
+                                faculty: null,
+                                phoneNumber: null,
+                                photoUrl:
+                                    'https://firebasestorage.googleapis.com/v0/b/projeto-kr3y5v.firebasestorage.app/o/default.jpg?alt=media&token=2baf7579-8d50-48f8-9d3c-14021556e57c',
+                              ),
+                              ...mapToFirestore(
+                                {
+                                  'created_time': FieldValue.serverTimestamp(),
+                                },
+                              ),
+                            });
+
                             context.pushNamedAuth(
                                 LoginWidget.routeName, context.mounted);
                           },
@@ -498,7 +516,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: 'Inter Tight',
+                                  fontFamily: 'Work Sans',
                                   color: Colors.white,
                                   letterSpacing: 0.0,
                                 ),
@@ -524,7 +542,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Inter',
+                                  fontFamily: 'Work Sans',
                                   color: Color(0xFFA84B74),
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
