@@ -202,6 +202,14 @@ Here are some screenshots of our first prototype:
 * **Puzzles**:
   * **Concerns about Integrating Google Maps Navigation**: We have uncertainties about whether it’s possible to integrate the Google Maps navigation system into our app. Additionally, we need to assess if this integration is feasible within the scope of the current sprint.
 
+#### Happiness Meter
+
+<div align="center">
+  <p> Review of the sprint 1 </p>
+  <img src="images/sprints/sprint1_happiness_meter.png">
+</div>
+
+
 #### Project Board
 <div align="center">
   <h3> Start of Sprint 1 </h3>
