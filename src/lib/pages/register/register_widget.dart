@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'register_model.dart';
 export 'register_model.dart';
 
@@ -72,11 +73,19 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                   child: Text(
                     'UPark',
                     style: FlutterFlowTheme.of(context).headlineMedium.override(
-                          fontFamily: 'Work Sans',
+                          font: GoogleFonts.workSans(
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FlutterFlowTheme.of(context)
+                                .headlineMedium
+                                .fontStyle,
+                          ),
                           color: FlutterFlowTheme.of(context).secondary,
                           fontSize: 40.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
+                          fontStyle: FlutterFlowTheme.of(context)
+                              .headlineMedium
+                              .fontStyle,
                         ),
                   ),
                 ),
@@ -101,10 +110,18 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Work Sans',
+                                    font: GoogleFonts.workSans(
+                                      fontWeight: FontWeight.w600,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
                                     fontSize: 36.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
                                   ),
                         ),
                       ),
@@ -124,16 +141,42 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                               labelStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
                                     color: Color(0xFF939393),
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
                                   ),
                               hintStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
                                     color: FlutterFlowTheme.of(context).primary,
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
                                   ),
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
@@ -170,9 +213,22 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'PT Serif Caption',
+                                  font: GoogleFonts.ptSerifCaption(
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
+                                  ),
                                   color: Color(0xFF939393),
                                   letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontStyle,
                                 ),
                             cursorColor:
                                 FlutterFlowTheme.of(context).primaryText,
@@ -197,16 +253,42 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                               labelStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
                                     color: Color(0xFF939393),
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
                                   ),
                               hintStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
                                     color: FlutterFlowTheme.of(context).primary,
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
                                   ),
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
@@ -243,9 +325,22 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'PT Serif Caption',
+                                  font: GoogleFonts.ptSerifCaption(
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
+                                  ),
                                   color: Color(0xFF939393),
                                   letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontStyle,
                                 ),
                             cursorColor:
                                 FlutterFlowTheme.of(context).primaryText,
@@ -267,15 +362,41 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             labelStyle: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: 'Inter',
+                                  font: GoogleFonts.inter(
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
+                                  ),
                                   color: Color(0xFF939393),
                                   letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontStyle,
                                 ),
                             hintStyle: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: 'Inter',
+                                  font: GoogleFonts.inter(
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
+                                  ),
                                   letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontStyle,
                                 ),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
@@ -324,9 +445,22 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'PT Serif Caption',
+                                    font: GoogleFonts.ptSerifCaption(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
                                   ),
                           cursorColor: FlutterFlowTheme.of(context).primaryText,
                           validator: _model.passwordTextControllerValidator
@@ -349,15 +483,41 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                               labelStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
                                     color: Color(0xFF939393),
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
                                   ),
                               hintStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
                                   ),
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
@@ -407,10 +567,23 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'PT Serif Caption',
+                                  font: GoogleFonts.ptSerifCaption(
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
+                                  ),
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontStyle,
                                 ),
                             cursorColor:
                                 FlutterFlowTheme.of(context).primaryText,
@@ -430,11 +603,19 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'PT Serif Caption',
+                                  font: GoogleFonts.ptSerifCaption(
+                                    fontWeight: FontWeight.normal,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
+                                  ),
                                   color: Color(0xFF939393),
                                   fontSize: 15.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.normal,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontStyle,
                                 ),
                           ),
                           Padding(
@@ -516,9 +697,22 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: 'Work Sans',
+                                  font: GoogleFonts.workSans(
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .fontStyle,
+                                  ),
                                   color: Colors.white,
                                   letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .fontStyle,
                                 ),
                             elevation: 0.0,
                             borderRadius: BorderRadius.circular(8.0),
@@ -542,11 +736,19 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Work Sans',
+                                  font: GoogleFonts.workSans(
+                                    fontWeight: FontWeight.w600,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
+                                  ),
                                   color: Color(0xFFA84B74),
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontStyle,
                                 ),
                           ),
                         ),

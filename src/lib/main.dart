@@ -51,7 +51,7 @@ class _MyAppState extends State<MyApp> {
 
   List<String> getRouteStack() =>
       _router.routerDelegate.currentConfiguration.matches
-          .map((e) => getRoute(e as RouteMatch?))
+          .map((e) => getRoute(e))
           .toList();
 
   late Stream<BaseAuthUser> userStream;
@@ -62,7 +62,6 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-
 
     _appStateNotifier = AppStateNotifier.instance;
     _router = createRouter(_appStateNotifier, widget.entryPage);

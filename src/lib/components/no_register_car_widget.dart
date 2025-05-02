@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'no_register_car_model.dart';
 export 'no_register_car_model.dart';
 
@@ -53,10 +54,15 @@ class _NoRegisterCarWidgetState extends State<NoRegisterCarWidget> {
           Text(
             'No registered car',
             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  fontFamily: 'Inter',
+                  font: GoogleFonts.inter(
+                    fontWeight: FontWeight.w200,
+                    fontStyle:
+                        FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                  ),
                   fontSize: 20.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w200,
+                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                 ),
           ),
         ],
