@@ -162,7 +162,7 @@ Here are some screenshots of our first prototype:
 ## Project management
 
 * Backlog management: Product backlog and Sprint backlog are available at [Github Projects board](https://github.com/orgs/LEIC-ES-2024-25/projects/47);
-* Release management: [v0](https://github.com/LEIC-ES-2024-25/2LEIC04T3/releases/tag/v0), [v1](https://github.com/LEIC-ES-2024-25/2LEIC04T3/releases/tag/v1)
+* Release management: [v0](https://github.com/LEIC-ES-2024-25/2LEIC04T3/releases/tag/v0), [v1](https://github.com/LEIC-ES-2024-25/2LEIC04T3/releases/tag/v1), [v2](https://github.com/LEIC-ES-2024-25/2LEIC04T3/releases/tag/v2)
 * Definitions:
   * In progress: Currently under development
   * Done: Development is complete, and the feature or change has been tested
@@ -236,7 +236,24 @@ Here are some screenshots of our first prototype:
 * **Do differently**:
   * **Structured Scope Expansion**: In future sprints, if additional work becomes available after completing the initial sprint goals, we should handle it through a structured decision-making process — clearly documenting, discussing, and aligning as a team before expanding the sprint scope. This will help maintain focus, transparency, and predictability.
 
+#### Happiness Meter
+<div align="center">
+  <p> Review of the sprint 2 </p>
+  <img src="images/sprints/sprint2_happiness_meter.png">
+</div>
 
+
+#### Project Board
+<div align="center">
+  <h3> Start of Sprint 2 </h3>
+  <p><i>Progress overview at the start of the sprint</i></p>
+  <img src="images/sprints/sprint2_start.png">
+</div>
+<div align="center">
+  <h3> End of Sprint 2 </h3>
+  <p><i>Progress overview at the end of the sprint</i></p>
+  <img src="images/sprints/sprint2_end.png">
+</div>
 
 
 ### Sprint 3
