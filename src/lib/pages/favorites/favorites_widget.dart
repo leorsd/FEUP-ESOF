@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'favorites_model.dart';
 export 'favorites_model.dart';
 
@@ -50,11 +51,17 @@ class _FavoritesWidgetState extends State<FavoritesWidget> {
             child: Text(
               'UPark',
               style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    fontFamily: 'Work Sans',
+                    font: GoogleFonts.workSans(
+                      fontWeight: FontWeight.bold,
+                      fontStyle:
+                          FlutterFlowTheme.of(context).headlineMedium.fontStyle,
+                    ),
                     color: Colors.white,
                     fontSize: 40.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.bold,
+                    fontStyle:
+                        FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                   ),
             ),
           ),
