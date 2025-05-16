@@ -16,11 +16,11 @@ This Software Development Report, tailored for LEIC-ES-2024-25, provides compreh
   * [Physical architecture](#Physical-Architecture)
   * [Vertical prototype](#Vertical-Prototype)
 * [Project management](#Project-Management)
-  * [Sprint 0](#Sprint-0)
-  * [Sprint 1](#Sprint-1)
-  * [Sprint 2](#Sprint-2)
-  * [Sprint 3](#Sprint-3)
-  * [Final Release](#Final-Release)
+  * [Sprint 0](docs/sprint0.md)
+  * [Sprint 1](docs/sprint1.md)
+  * [Sprint 2](docs/sprint2.md)
+  * [Sprint 3](docs/sprint3.md)
+  * [Final Release](docs/final_release.md)
 
 Contributions are expected to be made exclusively by the initial team, but we may open them to the community, after the course, in all areas and topics: requirements, technologies, development, experimentation, testing, etc.
 
@@ -168,94 +168,7 @@ Here are some screenshots of our first prototype:
   * Done: Development is complete, and the feature or change has been tested
   * Accepted: The client has reviewed and approved the delivered work
 
-### Sprint 0
-
-#### Retrospective
-
-* **Did well**:
-  * **Effective Communication**: We kept an open and effective communication flow, making collaboration smooth and keeping everyone connected.
-  * **Adaptability**: The team efficiently ajusted to the new worflow and tools. 
-  * **Design and Development Kickoff**: We successfully created initial mockups and began building the app in a fast-paced develoment process, enabling us to quicky move from ideation to execution.
-* **Do differently**:
-  * **Define clearer Sprint Goals**: Establish more specific objectives for the next sprint to measure progress more effectively.
-* **Puzzles**:
-  * **Task Distribution**: We're figuring out the best way to divide the upcoming tasks so that everyone has a fair and manageable workload.
-  * **Implementing the Chat System**: We still have some doubts about the best approach to integrating the chat functionality.
-
-#### Project Board
-<div align="center">
-  <h3> End of Sprint 0 </h3>
-  <p><i>Progress overview at the end of the sprint</i></p>
-  <img src="images/sprints/sprint0_end.png">
-  <img src="images/sprints/sprint0_end2.png">
-</div>
-
-### Sprint 1
-
-#### Retrospective
-
-* **Did well**:
-  * **Focused Delivery of Core Features**: We successfully developed features that cover key aspects of the app's functionality-car registration, messaging from security to students and vehicle-related notifications. These features are central to the app's purpose and show clear alignment with user needs.
-  * **Accurate Estimation and Task Completion**: We estimated our workload realistically during Sprint Planning and managed to complete everything we committed to.
-* **Do differently**:
-  * **Improved Task Separation**: We need to break tasks down into smaller, more independent units so that each task can be worked on without waiting for the completion of others.
-* **Puzzles**:
-  * **Concerns about Integrating Google Maps Navigation**: We have uncertainties about whether it’s possible to integrate the Google Maps navigation system into our app. Additionally, we need to assess if this integration is feasible within the scope of the current sprint.
-
-#### Happiness Meter
-
-<div align="center">
-  <p> Review of the sprint 1 </p>
-  <img src="images/sprints/sprint1_happiness_meter.png">
-</div>
 
 
-#### Project Board
-<div align="center">
-  <h3> Start of Sprint 1 </h3>
-  <p><i>Progress overview at the start of the sprint</i></p>
-  <img src="images/sprints/sprint1_start.png">
-</div>
-<div align="center">
-  <h3> End of Sprint 1 </h3>
-  <p><i>Progress overview at the end of the sprint</i></p>
-  <img src="images/sprints/sprint1_end.png">
-</div>
-
-### Sprint 2
-
-#### Retrospective
-
-* **Did well**:
-  * **Successful Development of Key Areas**: Building on the existing map functionality, this sprint focused on adding interactivity through pop-ups that display parking lot details upon selection. Alongside this, we integrated real-time occupancy data. These additions contribute to a more dynamic and informative interface, supporting quicker user decision-making and better situational awareness.
-  * **Responded to Feedback & Raised the Bar**: In the previous sprint, we were told we could aim higher-and we did. This time, we completed all initially planned user stories with time to spare. Instead of slowing down, we took the initiative to add an additional feature (supporting all university parking lots), expanding the scope and value of the release.
-
-* **Did poorly**:
-  * **Ad Hoc Decision-Making**: The decision to expand scope mid-sprint, while well-executed, wasn’t clearly documented or discussed as a team in a structured way. This could cause confusion or misalignment in bigger teams or future sprints.
-
-* **Do differently**:
-  * **Structured Scope Expansion**: In future sprints, if additional work becomes available after completing the initial sprint goals, we should handle it through a structured decision-making process — clearly documenting, discussing, and aligning as a team before expanding the sprint scope. This will help maintain focus, transparency, and predictability.
-
-#### Happiness Meter
-<div align="center">
-  <p> Review of the sprint 2 </p>
-  <img src="images/sprints/sprint2_happiness_meter.png">
-</div>
 
 
-#### Project Board
-<div align="center">
-  <h3> Start of Sprint 2 </h3>
-  <p><i>Progress overview at the start of the sprint</i></p>
-  <img src="images/sprints/sprint2_start.png">
-</div>
-<div align="center">
-  <h3> End of Sprint 2 </h3>
-  <p><i>Progress overview at the end of the sprint</i></p>
-  <img src="images/sprints/sprint2_end.png">
-</div>
-
-
-### Sprint 3
-
-### Final Release
