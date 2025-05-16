@@ -16,7 +16,7 @@
 <div align="center">
   <h3> End of Sprint 0 </h3>
   <p><i>Progress overview at the end of the sprint</i></p>
-  <img src="images/sprints/sprint0_end.png">
-  <img src="images/sprints/sprint0_end2.png">
+  <img src="../images/sprints/sprint0_end.png">
+  <img src="../images/sprints/sprint0_end2.png">
 </div>
 

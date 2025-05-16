@@ -15,7 +15,7 @@
 #### Happiness Meter
 <div align="center">
   <p> Review of the sprint 2 </p>
-  <img src="images/sprints/sprint2_happiness_meter.png">
+  <img src="../images/sprints/sprint2_happiness_meter.png">
 </div>
 
 
@@ -23,10 +23,10 @@
 <div align="center">
   <h3> Start of Sprint 2 </h3>
   <p><i>Progress overview at the start of the sprint</i></p>
-  <img src="images/sprints/sprint2_start.png">
+  <img src="../images/sprints/sprint2_start.png">
 </div>
 <div align="center">
   <h3> End of Sprint 2 </h3>
   <p><i>Progress overview at the end of the sprint</i></p>
-  <img src="images/sprints/sprint2_end.png">
+  <img src="../images/sprints/sprint2_end.png">
 </div>
