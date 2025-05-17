@@ -15,7 +15,7 @@ This Software Development Report, tailored for LEIC-ES-2024-25, provides compreh
   * [Logical architecture](#Logical-Architecture)
   * [Physical architecture](#Physical-Architecture)
   * [Vertical prototype](#Vertical-Prototype)
-* [Project management](docs/project_management.md)
+* [Project management](#Project-Management)
   * [Sprint 0](docs/sprint0.md)
   * [Sprint 1](docs/sprint1.md)
   * [Sprint 2](docs/sprint2.md)
@@ -159,8 +159,20 @@ Here are some screenshots of our first prototype:
   <img src="images/verticalPrototype/maps_screenshot.png" width="200" hspace="10">
 </p>
 
+## Project management
 
+* Backlog management: Product backlog and Sprint backlog are available at [Github Projects board](https://github.com/orgs/LEIC-ES-2024-25/projects/47);
+* Release management: [v0](https://github.com/LEIC-ES-2024-25/2LEIC04T3/releases/tag/v0), [v1](https://github.com/LEIC-ES-2024-25/2LEIC04T3/releases/tag/v1), [v2](https://github.com/LEIC-ES-2024-25/2LEIC04T3/releases/tag/v2)
+* Definitions:
+  * In progress: Currently under development
+  * Done: Development is complete, and the feature or change has been tested
+  * Accepted: The client has reviewed and approved the delivered work
 
+* [Sprint 0](docs/sprint0.md)
+* [Sprint 1](docs/sprint1.md)
+* [Sprint 2](docs/sprint2.md)
+* [Sprint 3](docs/sprint3.md)
+* [Final Release](docs/final_release.md)
 
 
 
