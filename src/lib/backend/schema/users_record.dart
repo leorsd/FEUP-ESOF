@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:collection/collection.dart';
 
 import '/backend/schema/util/firestore_util.dart';
+import '/backend/schema/util/schema_util.dart';
 
 import 'index.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -35,25 +36,10 @@ class UsersRecord extends FirestoreRecord {
   bool get isSecurity => _isSecurity ?? false;
   bool hasIsSecurity() => _isSecurity != null;
 
-  // "up_number" field.
-  int? _upNumber;
-  int get upNumber => _upNumber ?? 0;
-  bool hasUpNumber() => _upNumber != null;
-
-  // "username" field.
-  String? _username;
-  String get username => _username ?? '';
-  bool hasUsername() => _username != null;
-
   // "faculty" field.
   String? _faculty;
   String get faculty => _faculty ?? '';
   bool hasFaculty() => _faculty != null;
-
-  // "display_name" field.
-  String? _displayName;
-  String get displayName => _displayName ?? '';
-  bool hasDisplayName() => _displayName != null;
 
   // "photo_url" field.
   String? _photoUrl;
@@ -65,17 +51,32 @@ class UsersRecord extends FirestoreRecord {
   String get phoneNumber => _phoneNumber ?? '';
   bool hasPhoneNumber() => _phoneNumber != null;
 
+  // "display_name" field.
+  String? _displayName;
+  String get displayName => _displayName ?? '';
+  bool hasDisplayName() => _displayName != null;
+
+  // "carsRegistered" field.
+  List<DocumentReference>? _carsRegistered;
+  List<DocumentReference> get carsRegistered => _carsRegistered ?? const [];
+  bool hasCarsRegistered() => _carsRegistered != null;
+
+  // "up_number" field.
+  String? _upNumber;
+  String get upNumber => _upNumber ?? '';
+  bool hasUpNumber() => _upNumber != null;
+
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _uid = snapshotData['uid'] as String?;
     _createdTime = snapshotData['created_time'] as DateTime?;
     _isSecurity = snapshotData['is_security'] as bool?;
-    _upNumber = castToType<int>(snapshotData['up_number']);
-    _username = snapshotData['username'] as String?;
     _faculty = snapshotData['faculty'] as String?;
-    _displayName = snapshotData['display_name'] as String?;
     _photoUrl = snapshotData['photo_url'] as String?;
     _phoneNumber = snapshotData['phone_number'] as String?;
+    _displayName = snapshotData['display_name'] as String?;
+    _carsRegistered = getDataList(snapshotData['carsRegistered']);
+    _upNumber = snapshotData['up_number'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -116,12 +117,11 @@ Map<String, dynamic> createUsersRecordData({
   String? uid,
   DateTime? createdTime,
   bool? isSecurity,
-  int? upNumber,
-  String? username,
   String? faculty,
-  String? displayName,
   String? photoUrl,
   String? phoneNumber,
+  String? displayName,
+  String? upNumber,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -129,12 +129,11 @@ Map<String, dynamic> createUsersRecordData({
       'uid': uid,
       'created_time': createdTime,
       'is_security': isSecurity,
-      'up_number': upNumber,
-      'username': username,
       'faculty': faculty,
-      'display_name': displayName,
       'photo_url': photoUrl,
       'phone_number': phoneNumber,
+      'display_name': displayName,
+      'up_number': upNumber,
     }.withoutNulls,
   );
 
@@ -146,16 +145,17 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
 
   @override
   bool equals(UsersRecord? e1, UsersRecord? e2) {
+    const listEquality = ListEquality();
     return e1?.email == e2?.email &&
         e1?.uid == e2?.uid &&
         e1?.createdTime == e2?.createdTime &&
         e1?.isSecurity == e2?.isSecurity &&
-        e1?.upNumber == e2?.upNumber &&
-        e1?.username == e2?.username &&
         e1?.faculty == e2?.faculty &&
-        e1?.displayName == e2?.displayName &&
         e1?.photoUrl == e2?.photoUrl &&
-        e1?.phoneNumber == e2?.phoneNumber;
+        e1?.phoneNumber == e2?.phoneNumber &&
+        e1?.displayName == e2?.displayName &&
+        listEquality.equals(e1?.carsRegistered, e2?.carsRegistered) &&
+        e1?.upNumber == e2?.upNumber;
   }
 
   @override
@@ -164,12 +164,12 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.uid,
         e?.createdTime,
         e?.isSecurity,
-        e?.upNumber,
-        e?.username,
         e?.faculty,
-        e?.displayName,
         e?.photoUrl,
-        e?.phoneNumber
+        e?.phoneNumber,
+        e?.displayName,
+        e?.carsRegistered,
+        e?.upNumber
       ]);
 
   @override
