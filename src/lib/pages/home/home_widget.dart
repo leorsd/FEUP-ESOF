@@ -50,10 +50,11 @@ class _HomeWidgetState extends State<HomeWidget> {
             child: Text(
               'UPark',
               style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    fontFamily: 'Inter Tight',
+                    fontFamily: 'Work Sans',
                     color: Colors.white,
                     fontSize: 40.0,
                     letterSpacing: 0.0,
+                    fontWeight: FontWeight.bold,
                   ),
             ),
           ),
