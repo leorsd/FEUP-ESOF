@@ -1,0 +1,44 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "message",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "receivers",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "message",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "car_plate",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "receivers",
+          "arrayConfig": "CONTAINS"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "fcm_tokens",
+      "fieldPath": "fcm_token",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    }
+  ]
+}
