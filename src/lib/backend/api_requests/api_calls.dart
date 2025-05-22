@@ -49,22 +49,26 @@ class DistanceParkCall {
       ));
 }
 
-class RatingCall {
+class PlacesInfoCall {
   static Future<ApiCallResponse> call({
-    String? input = '',
+    String? searchTerm = '',
   }) async {
+    final ffApiRequestBody = '''
+{
+  "textQuery": "${escapeStringForJson(searchTerm)}"
+}''';
     return ApiManager.instance.makeApiCall(
-      callName: 'rating',
-      apiUrl:
-          'https://maps.googleapis.com/maps/api/place/findplacefromtext/json',
-      callType: ApiCallType.GET,
-      headers: {},
-      params: {
-        'input': input,
-        'inputtype': "textquery",
-        'fields': "rating",
-        'key': "AIzaSyAK-pSqt2_oh4fJjMTYXUTEPGVoFCSonBo",
+      callName: 'placesInfo',
+      apiUrl: 'https://places.googleapis.com/v1/places:searchText',
+      callType: ApiCallType.POST,
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Goog-Api-Key': 'AIzaSyAK-pSqt2_oh4fJjMTYXUTEPGVoFCSonBo',
+        'X-Goog-FieldMask': 'places.rating,places.accessibilityOptions',
       },
+      params: {},
+      body: ffApiRequestBody,
+      bodyType: BodyType.JSON,
       returnBody: true,
       encodeBodyUtf8: false,
       decodeUtf8: false,
@@ -76,7 +80,40 @@ class RatingCall {
 
   static double? rating(dynamic response) => castToType<double>(getJsonField(
         response,
-        r'''$.candidates[:].rating''',
+        r'''$.places[0].rating''',
+      ));
+  static bool? accesibilityParking(dynamic response) =>
+      castToType<bool>(getJsonField(
+        response,
+        r'''$.places[0].accessibilityOptions.wheelchairAccessibleParking''',
+      ));
+}
+
+class WeatherCall {
+  static Future<ApiCallResponse> call({
+    String? q = '',
+  }) async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'weather',
+      apiUrl:
+          'https://api.weatherapi.com/v1/current.json?key=b84cd4245ac742dfb76230653252105',
+      callType: ApiCallType.GET,
+      headers: {},
+      params: {
+        'q': q,
+      },
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+
+  static String? icon(dynamic response) => castToType<String>(getJsonField(
+        response,
+        r'''$.current.condition.icon''',
       ));
 }
 
@@ -125,4 +162,15 @@ String _serializeJson(dynamic jsonVar, [bool isList = false]) {
     }
     return isList ? '[]' : '{}';
   }
+}
+
+String? escapeStringForJson(String? input) {
+  if (input == null) {
+    return null;
+  }
+  return input
+      .replaceAll('\\', '\\\\')
+      .replaceAll('"', '\\"')
+      .replaceAll('\n', '\\n')
+      .replaceAll('\t', '\\t');
 }
