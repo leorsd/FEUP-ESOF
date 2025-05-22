@@ -114,14 +114,14 @@ class ParameterData {
 
 final parametersBuilderMap =
     <String, Future<ParameterData> Function(Map<String, dynamic>)>{
-  'Login': ParameterData.none(),
-  'Home': ParameterData.none(),
-  'Register': ParameterData.none(),
   'Notifications': ParameterData.none(),
-  'Profile': ParameterData.none(),
   'Maps': ParameterData.none(),
-  'Favorites': ParameterData.none(),
+  'Login': ParameterData.none(),
+  'Register': ParameterData.none(),
+  'Profile': ParameterData.none(),
   'EditProfile': ParameterData.none(),
+  'Home': ParameterData.none(),
+  'Favorites': ParameterData.none(),
 };
 
 Map<String, dynamic> getInitialParameterData(Map<String, dynamic> data) {

@@ -74,21 +74,19 @@ class _NoMessagesWidgetState extends State<NoMessagesWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 0.0),
               child: Text(
                 'It seems that you don\'t have any recent message.',
                 textAlign: TextAlign.center,
                 style: FlutterFlowTheme.of(context).labelMedium.override(
-                      font: GoogleFonts.ptSerifCaption(
-                        fontWeight:
-                            FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                      font: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w500,
                         fontStyle:
                             FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
                       fontSize: 16.0,
                       letterSpacing: 0.0,
-                      fontWeight:
-                          FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                      fontWeight: FontWeight.w500,
                       fontStyle:
                           FlutterFlowTheme.of(context).labelMedium.fontStyle,
                     ),

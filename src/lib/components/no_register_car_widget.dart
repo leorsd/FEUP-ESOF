@@ -54,14 +54,14 @@ class _NoRegisterCarWidgetState extends State<NoRegisterCarWidget> {
           Text(
             'No registered car',
             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  font: GoogleFonts.inter(
-                    fontWeight: FontWeight.w200,
+                  font: GoogleFonts.poppins(
+                    fontWeight: FontWeight.normal,
                     fontStyle:
                         FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                   ),
                   fontSize: 20.0,
                   letterSpacing: 0.0,
-                  fontWeight: FontWeight.w200,
+                  fontWeight: FontWeight.normal,
                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                 ),
           ),

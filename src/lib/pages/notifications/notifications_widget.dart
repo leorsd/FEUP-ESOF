@@ -119,7 +119,6 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                         }
 
                         return ListView.separated(
-                          key: ValueKey('ListView_8snq'),
                           padding: EdgeInsets.fromLTRB(
                             0,
                             5.0,

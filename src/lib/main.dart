@@ -16,7 +16,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   GoRouter.optionURLReflectsImperativeAPIs = true;
   usePathUrlStrategy();
+
   await initFirebase();
+
   runApp(MyApp());
 }
 
@@ -47,11 +49,10 @@ class _MyAppState extends State<MyApp> {
     return matchList.uri.toString();
   }
 
-  List<String> getRouteStack() {
-    final matches = _router.routerDelegate.currentConfiguration;
-    return matches.matches.map((match) => getRoute(match as RouteMatch?)).toList();
-  }
-
+  List<String> getRouteStack() =>
+      _router.routerDelegate.currentConfiguration.matches
+          .map((e) => getRoute(e))
+          .toList();
 
   late Stream<BaseAuthUser> userStream;
 
@@ -157,6 +158,7 @@ class _NavBarPageState extends State<NavBarPage> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: FaIcon(
+              key: ValueKey('map'),
               FontAwesomeIcons.mapMarkerAlt,
               size: 24.0,
             ),
@@ -165,6 +167,7 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: FaIcon(
+              key: ValueKey('favorites'),
               FontAwesomeIcons.heart,
               size: 24.0,
             ),
@@ -173,6 +176,7 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
+              key: ValueKey('home'),
               Icons.home_outlined,
               size: 28.0,
             ),
@@ -185,6 +189,7 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
+              key: ValueKey('notifications'),
               Icons.chat_bubble_outline_rounded,
               size: 24.0,
             ),
@@ -193,6 +198,7 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
+              key: ValueKey('profile'),
               Icons.person,
               size: 30.0,
             ),

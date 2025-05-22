@@ -16,8 +16,10 @@ class CardParkModel extends FlutterFlowModel<CardParkWidget> {
   ApiCallResponse? aPIRes;
   // Stores action output result for [Backend Call - API (DistancePark)] action in CardPark widget.
   ApiCallResponse? aPIResWalking;
-  // Stores action output result for [Backend Call - API (rating)] action in CardPark widget.
-  ApiCallResponse? aPIResRating;
+  // Stores action output result for [Backend Call - API (placesInfo)] action in CardPark widget.
+  ApiCallResponse? aPIResInfo;
+  // Stores action output result for [Backend Call - API (weather)] action in CardPark widget.
+  ApiCallResponse? apiWeather;
 
   @override
   void initState(BuildContext context) {}
