@@ -16,9 +16,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   GoRouter.optionURLReflectsImperativeAPIs = true;
   usePathUrlStrategy();
-
   await initFirebase();
-
   runApp(MyApp());
 }
 
@@ -49,10 +47,11 @@ class _MyAppState extends State<MyApp> {
     return matchList.uri.toString();
   }
 
-  List<String> getRouteStack() =>
-      _router.routerDelegate.currentConfiguration.matches
-          .map((e) => getRoute(e))
-          .toList();
+  List<String> getRouteStack() {
+    final matches = _router.routerDelegate.currentConfiguration;
+    return matches.matches.map((match) => getRoute(match as RouteMatch?)).toList();
+  }
+
 
   late Stream<BaseAuthUser> userStream;
 
