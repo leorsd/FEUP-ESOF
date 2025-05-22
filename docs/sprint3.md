@@ -21,3 +21,14 @@
 
 
 #### Project Board
+
+<div align="center">
+  <h3> Start of Sprint 3 </h3>
+  <p><i>Progress overview at the start of the sprint</i></p>
+  <img src="../images/sprints/sprint3_start.png">
+</div>
+<div align="center">
+  <h3> End of Sprint 3 </h3>
+  <p><i>Progress overview at the end of the sprint</i></p>
+  <img src="../images/sprints/sprint3_end.png">
+</div>
