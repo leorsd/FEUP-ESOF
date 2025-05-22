@@ -18,6 +18,10 @@
 
 #### Hapiness Meter
 
+<div align="center">
+  <p> Review of the sprint 3 </p>
+  <img src="../images/sprints/sprint2_happiness_meter.png">
+</div>
 
 
 #### Project Board
