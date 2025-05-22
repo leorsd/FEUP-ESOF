@@ -66,6 +66,11 @@ class UsersRecord extends FirestoreRecord {
   String get upNumber => _upNumber ?? '';
   bool hasUpNumber() => _upNumber != null;
 
+  // "favorites" field.
+  List<DocumentReference>? _favorites;
+  List<DocumentReference> get favorites => _favorites ?? const [];
+  bool hasFavorites() => _favorites != null;
+
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _uid = snapshotData['uid'] as String?;
@@ -77,6 +82,7 @@ class UsersRecord extends FirestoreRecord {
     _displayName = snapshotData['display_name'] as String?;
     _carsRegistered = getDataList(snapshotData['carsRegistered']);
     _upNumber = snapshotData['up_number'] as String?;
+    _favorites = getDataList(snapshotData['favorites']);
   }
 
   static CollectionReference get collection =>
@@ -155,7 +161,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.phoneNumber == e2?.phoneNumber &&
         e1?.displayName == e2?.displayName &&
         listEquality.equals(e1?.carsRegistered, e2?.carsRegistered) &&
-        e1?.upNumber == e2?.upNumber;
+        e1?.upNumber == e2?.upNumber &&
+        listEquality.equals(e1?.favorites, e2?.favorites);
   }
 
   @override
@@ -169,7 +176,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.phoneNumber,
         e?.displayName,
         e?.carsRegistered,
-        e?.upNumber
+        e?.upNumber,
+        e?.favorites
       ]);
 
   @override

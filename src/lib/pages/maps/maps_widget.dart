@@ -119,6 +119,7 @@ class _MapsWidgetState extends State<MapsWidget> {
                       snapshot.data!;
 
                   return FlutterFlowGoogleMap(
+                    key: ValueKey('GoogleMap_oixk'),
                     controller: _model.googleMapsController,
                     onCameraIdle: (latLng) => _model.googleMapsCenter = latLng,
                     initialLocation: _model.googleMapsCenter ??=
