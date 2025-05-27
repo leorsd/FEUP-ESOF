@@ -103,60 +103,52 @@ class _HomeWidgetState extends State<HomeWidget> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 5.0),
-                        child: FlutterFlowDropDown<String>(
-                          controller: _model.dropDownValueController ??=
-                              FormFieldController<String>(
-                            _model.dropDownValue ??= '',
-                          ),
-                          options: List<String>.from([
-                            'currentAvailability-asc',
-                            'currentAvailability-desc',
-                            'maxAvailability-asc',
-                            'maxAvailability-desc',
-                            'faculty-asc',
-                            'faculty-desc'
-                          ]),
-                          optionLabels: [
-                            'Availability: Low to High',
-                            'Availability: High to Low',
-                            'Max Availa.: Low to High',
-                            'Max Availa.: High to Low',
-                            'Faculty: A - Z',
-                            'Faculty: Z - A'
-                          ],
-                          onChanged: (val) async {
-                            safeSetState(() => _model.dropDownValue = val);
-                            _model.updatedList = await actions.sortItems(
-                              _model.parkingList!
-                                  .map((e) => e.reference)
-                                  .toList(),
-                              _model.dropDownValue!,
-                            );
-                            _model.parkListSort = _model.updatedList!
-                                .toList()
-                                .cast<ParkingLotRecord>();
-                            safeSetState(() {});
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              30.0, 10.0, 30.0, 5.0),
+                          child: FlutterFlowDropDown<String>(
+                            controller: _model.dropDownValueController ??=
+                                FormFieldController<String>(
+                              _model.dropDownValue ??= '',
+                            ),
+                            options: List<String>.from([
+                              'currentAvailability-asc',
+                              'currentAvailability-desc',
+                              'maxAvailability-asc',
+                              'maxAvailability-desc',
+                              'faculty-asc',
+                              'faculty-desc'
+                            ]),
+                            optionLabels: [
+                              'Availability: Low to High',
+                              'Availability: High to Low',
+                              'Max Availa.: Low to High',
+                              'Max Availa.: High to Low',
+                              'Faculty: A - Z',
+                              'Faculty: Z - A'
+                            ],
+                            onChanged: (val) async {
+                              safeSetState(() => _model.dropDownValue = val);
+                              _model.updatedList = await actions.sortItems(
+                                _model.parkingList!
+                                    .map((e) => e.reference)
+                                    .toList(),
+                                _model.dropDownValue!,
+                              );
+                              _model.parkListSort = _model.updatedList!
+                                  .toList()
+                                  .cast<ParkingLotRecord>();
+                              safeSetState(() {});
 
-                            safeSetState(() {});
-                          },
-                          width: MediaQuery.sizeOf(context).width * 0.55,
-                          height: MediaQuery.sizeOf(context).height * 0.05,
-                          textStyle:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    font: GoogleFonts.inter(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .fontWeight,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
-                                    ),
-                                    color: Colors.black,
-                                    fontSize: 14.0,
-                                    letterSpacing: 0.0,
+                              safeSetState(() {});
+                            },
+                            width: MediaQuery.sizeOf(context).width * 0.55,
+                            height: MediaQuery.sizeOf(context).height * 0.05,
+                            textStyle: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .fontWeight,
@@ -164,23 +156,34 @@ class _HomeWidgetState extends State<HomeWidget> {
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                          hintText: 'Order by...',
-                          icon: Icon(
-                            Icons.keyboard_arrow_down_rounded,
-                            color: Colors.black,
-                            size: 24.0,
+                                  color: Colors.black,
+                                  fontSize: 14.0,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontStyle,
+                                ),
+                            hintText: 'Order by...',
+                            icon: Icon(
+                              Icons.keyboard_arrow_down_rounded,
+                              color: Colors.black,
+                              size: 24.0,
+                            ),
+                            fillColor: Colors.white,
+                            elevation: 2.0,
+                            borderColor: Colors.transparent,
+                            borderWidth: 0.0,
+                            borderRadius: 12.0,
+                            margin: EdgeInsetsDirectional.fromSTEB(
+                                12.0, 0.0, 12.0, 0.0),
+                            hidesUnderline: true,
+                            isOverButton: false,
+                            isSearchable: false,
+                            isMultiSelect: false,
                           ),
-                          fillColor: Colors.white,
-                          elevation: 2.0,
-                          borderColor: Colors.transparent,
-                          borderWidth: 0.0,
-                          borderRadius: 12.0,
-                          margin: EdgeInsetsDirectional.fromSTEB(
-                              12.0, 0.0, 12.0, 0.0),
-                          hidesUnderline: true,
-                          isOverButton: false,
-                          isSearchable: false,
-                          isMultiSelect: false,
                         ),
                       ),
                     ],
@@ -195,7 +198,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                       return ListView.separated(
                         padding: EdgeInsets.fromLTRB(
                           0,
-                          0,
+                          8.0,
                           0,
                           10.0,
                         ),
